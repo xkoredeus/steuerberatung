@@ -249,9 +249,13 @@ $(() => {
             autoAlpha: 0,
         }, 2.95);
 
-    $('.js-start-animation').on('click', function() {
+    function playStartAnimation() {
         testimonialsScene.play();
-    });
+    }
+
+    $('.js-start-animation').on('click', playStartAnimation);
+    $('body').on('mousewheel', playStartAnimation);
+    $('body').on('touchmove', playStartAnimation);
 
     $('.js-start-woomera').on('click', function() {
         testimonialsScene.pause();
@@ -261,7 +265,7 @@ $(() => {
     // переход со второго на третий
     const serviceTimeline = gsap.timeline({
         defaults: {
-            duration: 1.2,
+            duration: .5,
             ease: "ease",
         },
     })
@@ -283,7 +287,7 @@ $(() => {
     // скрыть кнопку в преимуществах
     const hideTestimonialsButton = gsap.timeline({
         defaults: {
-            duration: 1.2,
+            duration: 1,
             ease: "ease",
         },
     })
