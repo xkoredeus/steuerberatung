@@ -1,0 +1,15 @@
+.nav {
+  @include r(600) {
+    display: none;
+  }
+
+  &__link {
+    margin-right: 24px;
+
+    @include rmin(700) {
+      &:last-child {
+        margin-right: 78px;
+      }
+    }
+  }
+}

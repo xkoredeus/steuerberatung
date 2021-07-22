@@ -1,0 +1,90 @@
+.section {
+  &--inner {
+    padding: 60px 0;
+
+    @include r(1200) {
+      padding: 35px 0
+    }
+  }
+
+  &__title {
+    font-family: $o-Bold;
+    line-height: 1.2;
+
+    @include r(960) {
+      word-break: break-word;
+      line-height: 1;
+    }
+
+    &--h1 {
+      font-size: 3.4rem;
+
+      @include r(1520) {
+        font-size: 3rem;
+      }
+
+      @include r(960) {
+        font-size: 2.8rem;
+      }
+
+      @include r(600) {
+        font-size: 2.1rem;
+      }
+
+      @include r(375) {
+        font-size: 1.7143rem;
+      }
+    }
+
+    &--h2 {
+      font-size: 2.6rem;
+
+      @include r(1520) {
+        font-size: 2.4rem;
+      }
+
+      @include r(960) {
+        font-size: 2rem;
+      }
+
+      @include r(600) {
+        font-size: 1.86rem;
+      }
+
+      @include r(375) {
+        font-size: 1.4286rem;
+      }
+    }
+
+    &--h4,
+    &.link {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-size: .85rem;
+
+    &--spacing {
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+
+        @include r(620) {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+
+
+
+  &__button {
+    &-wrapper {
+      position: absolute;
+      width: 100%;
+      bottom: 83px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

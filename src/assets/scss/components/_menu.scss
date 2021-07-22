@@ -1,0 +1,33 @@
+.menu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -5px;
+  transform: translateY(-120%);
+  padding: 94px 0 81px;
+  background-color: $white;
+  @include ease;
+
+  &__search {
+    display: flex;
+    max-width: 602px;
+    margin-bottom: 49px;
+
+    &-input {
+      flex-grow: 1;
+      margin-right: 16px;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+}

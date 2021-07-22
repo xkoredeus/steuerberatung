@@ -1,0 +1,18 @@
+@import "includes/fancybox/jquery.fancybox.min";
+@import "includes/swiper/swiper.min";
+@import "includes/bs-grid/grid";
+@import "includes/base";
+
+@import "components/header";
+@import "components/banner";
+@import "components/footer";
+@import "components/burger";
+@import "components/nav";
+@import "components/menu";
+
+@import "pages/home";
+@import "pages/team";
+@import "pages/employee";
+@import "pages/support";
+@import "pages/consultation";
+@import "pages/feedback";

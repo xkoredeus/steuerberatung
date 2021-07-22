@@ -1,0 +1,50 @@
+.banner {
+  position: relative;
+  background: radial-gradient(100% 100% at 96.56% 100%, #EAEBF2 0%, #CCCED7 100%);
+  height: 100vh;
+  min-height: 640px;
+  overflow: hidden;
+
+  &__offer {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding: 120px 0 100px;
+
+    @include r(600) {
+      padding: 100px 0;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 120%;
+
+    @include r(768) {
+      right: 0;
+      left: auto;
+      max-height: 400px;
+    }
+
+    @include r(600) {
+      max-width: 100%;
+    }
+
+    &-wrapper {
+      position: relative;
+      height: 100%;
+    }
+  }
+
+  .section__button-wrapper {
+    z-index: 1;
+    @include r(600) {
+      bottom: 45vh;
+    }
+  }
+}

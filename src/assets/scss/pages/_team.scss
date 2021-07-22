@@ -1,0 +1,35 @@
+.team {
+  position: relative;
+  background: radial-gradient(100% 100% at 96.56% 100%, #EAEBF2 0%, #CCCED7 100%);
+  height: 100vh;
+  min-height: 400px;
+  overflow: hidden;
+  padding-top: 18vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  &__slider {
+    overflow: visible;
+  }
+
+  &__item {
+    &-subtitle {
+      margin: 25px 0 32px;
+    }
+
+    &-picture {
+      max-width: 100%;
+      height: auto;
+      max-height: 420px;
+      @include ease;
+      transform-origin: bottom center;
+    }
+
+    &:hover {
+      .team__item-picture {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

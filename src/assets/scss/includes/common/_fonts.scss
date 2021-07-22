@@ -1,0 +1,18 @@
+$o-Light: 'OpenSans-Light';
+$o-Regular: 'OpenSans-Regular';
+$o-SemiBold: 'OpenSans-SemiBold';
+$o-Bold: 'OpenSans-Bold';
+$o-ExtraBold: 'OpenSans-ExtraBold';
+$o-Italic: 'OpenSans-Italic';
+
+.o-bold {
+  font-family: $o-Bold;
+}
+
+.o-sbold {
+  font-family: $o-SemiBold;
+}
+
+.o-ebold {
+  font-family: $o-ExtraBold;
+}

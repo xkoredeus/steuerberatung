@@ -1,0 +1,20 @@
+.support {
+  &__logo {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    max-width: 480px;
+    height: auto;
+
+    @include r(1280) {
+      max-width: 400px;
+    }
+    @include r(960) {
+      max-width: 300px;
+    }
+
+    @include r(600) {
+      max-width: 200px;
+    }
+  }
+}

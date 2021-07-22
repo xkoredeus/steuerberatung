@@ -1,0 +1,54 @@
+.link {
+  position: relative;
+  font-size: 0.8rem;
+  display: inline-block;
+
+  span {
+    border-bottom: 2px solid $lgray;
+    @include ease;
+  }
+
+  &:hover {
+    span {
+      border-bottom-color: $yellow;
+    }
+  }
+
+  &--big {
+    font-size: 1rem;
+  }
+
+  &--back {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &__button {
+      width: 48px;
+      height: 48px;
+      border: 1px solid $gray;
+      @include flex-center;
+      @include ease;
+    }
+
+    svg {
+      @include ease;
+    }
+
+    &__text {
+      font-size: .8rem;
+    }
+
+    &:hover {
+      .link--back {
+        &__button {
+          border-color: $yellow;
+        }
+      }
+
+      svg {
+        transform: translateX(-3px);
+      }
+    }
+  }
+}

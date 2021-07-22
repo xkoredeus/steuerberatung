@@ -1,0 +1,18 @@
+.consultation {
+  &__in {
+    max-width: 1200px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    margin: 60px auto;
+
+    @include r(600) {
+      grid-template-columns: auto;
+      grid-row-gap: 30px;
+      margin: 30px auto;
+    }
+  }
+}

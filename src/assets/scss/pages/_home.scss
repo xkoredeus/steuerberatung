@@ -1,0 +1,119 @@
+.home {
+  position: relative;
+
+  .testimonials,
+  .service {
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    width: 100%;
+    background-color: $white;
+    z-index: 1;
+
+    .section__title--h2  {
+      font-size: 3.2rem;
+      text-shadow: 0 0 .5px $white;
+
+      @include r(1520) {
+        font-size: 2.8rem;
+      }
+
+      @include r(960) {
+        font-size: 2.5rem;
+      }
+
+      @include r(600) {
+        font-size: 1.9rem;
+      }
+
+      @include r(375) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.testimonials {
+  &__in {
+    overflow: hidden;
+
+    .container {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+    }
+  }
+
+  .button--primary {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__item {
+    position: absolute;
+    word-break: break-word;
+
+    &--1 {
+      left: 5%;
+      top: 15px;
+    }
+
+    &--2 {
+      right: 30px;
+      top: 10%;
+    }
+
+    &--3 {
+      left: 2%;
+      top: 30%;
+    }
+
+    &--4 {
+      left: 55%;
+      bottom: 24%;
+    }
+
+    &--5 {
+      bottom: -5%;
+      left: 20%;
+    }
+  }
+
+  &__section {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+.service {
+  &__in {
+    position: relative;
+    overflow: hidden;
+    padding: 140px 0;
+    height: 100vh;
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    @include r(768) {
+      padding: 120px 0 140px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.boomerang {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

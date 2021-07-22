@@ -1,0 +1,76 @@
+button {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: $tr;
+}
+
+.button {
+  position: relative;
+  font-size: 0.9rem;
+  font-family: $o-SemiBold;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  @include ease;
+
+  &__decoration {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0;
+
+    @include ease;
+
+    @include r(960) {
+      height: 15px;
+    }
+
+    &--top {
+      bottom: calc(100% - 1px);
+      transform: scaleY(0);
+      transform-origin: bottom left;
+    }
+
+    &--bottom {
+      top: calc(100% - 1px);
+      transform-origin: top left;
+    }
+  }
+
+  &--primary {
+    position: relative;
+    background-color: $yellow;
+    padding: 20px 46px;
+
+    @include r(960) {
+      padding: 15px 25px;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+    &:hover {
+      .button__decoration {
+        &--bottom {
+          transform: scaleY(0);
+        }
+
+        &--top {
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+
+  &--secondary {
+    padding: 18px 40px;
+    border: 2px solid $yellow;
+
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+}
