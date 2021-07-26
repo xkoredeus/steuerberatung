@@ -56,26 +56,55 @@
     &--1 {
       left: 5%;
       top: 15px;
+
+      @include r(600) {
+        top: 120px;
+      }
     }
 
     &--2 {
       right: 30px;
       top: 10%;
+
+      @include r(600) {
+        right: 15px;
+        top: 20%;
+        max-width: 120px !important;
+      }
     }
 
     &--3 {
       left: 2%;
       top: 30%;
+
+      @include r(600) {
+        left: 2%;
+        top: 40%;
+        max-width: 210px !important;
+      }
     }
 
     &--4 {
       left: 55%;
       bottom: 24%;
+
+      @include r(600) {
+        left: auto;
+        right: 3%;
+        bottom: 34%;
+        max-width: 210px !important;
+      }
     }
 
     &--5 {
       bottom: -5%;
       left: 20%;
+
+      @include r(600) {
+        right: 3%;
+        bottom: 17%;
+        max-width: 200px !important;
+      }
     }
   }
 

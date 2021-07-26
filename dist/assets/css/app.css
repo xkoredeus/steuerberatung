@@ -6607,9 +6607,23 @@ a:hover {
   top: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .testimonials__item--1 {
+    top: 120px;
+  }
+}
+
 .testimonials__item--2 {
   right: 30px;
   top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonials__item--2 {
+    right: 15px;
+    top: 20%;
+    max-width: 120px !important;
+  }
 }
 
 .testimonials__item--3 {
@@ -6617,14 +6631,39 @@ a:hover {
   top: 30%;
 }
 
+@media only screen and (max-width: 600px) {
+  .testimonials__item--3 {
+    left: 2%;
+    top: 40%;
+    max-width: 210px !important;
+  }
+}
+
 .testimonials__item--4 {
   left: 55%;
   bottom: 24%;
 }
 
+@media only screen and (max-width: 600px) {
+  .testimonials__item--4 {
+    left: auto;
+    right: 3%;
+    bottom: 34%;
+    max-width: 210px !important;
+  }
+}
+
 .testimonials__item--5 {
   bottom: -5%;
   left: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .testimonials__item--5 {
+    right: 3%;
+    bottom: 17%;
+    max-width: 200px !important;
+  }
 }
 
 .testimonials__section {
