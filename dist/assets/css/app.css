@@ -6422,7 +6422,7 @@ a:hover {
 .burger__in {
   position: relative;
   width: 20px;
-  height: 16px;
+  height: 15px;
   display: block;
 }
 
@@ -6464,13 +6464,6 @@ a:hover {
   -webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
           transform: translateY(-10px) translateX(0) rotate(-45deg);
   width: 100%;
-}
-
-@media only screen and (max-width: 960px) {
-  .burger.active .burger__line--3 {
-    -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
-            transform: translateY(-11px) translateX(0) rotate(-45deg);
-  }
 }
 
 @media only screen and (max-width: 600px) {

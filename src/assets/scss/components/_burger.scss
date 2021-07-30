@@ -9,7 +9,7 @@
   &__in {
     position: relative;
     width: 20px;
-    height: 16px;
+    height: 15px;
     display: block;
   }
 
@@ -45,10 +45,6 @@
     .burger__line--3 {
       transform: translateY(-10px) translateX(0) rotate(45deg * -1);
       width: 100%;
-
-      @include r(960) {
-        transform: translateY(-11px) translateX(0) rotate(45deg * -1);
-      }
     }
   }
 }
